@@ -1,0 +1,8 @@
+services:
+
+  db:
+    container_name: bookstore-db
+    build: ./sql
+    restart: always
+    ports:
+      - 1433:1433
